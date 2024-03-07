@@ -3642,18 +3642,24 @@ input, select, textarea {
 				width: 60%;
 			}
 
-			#contact > .inner > :nth-child(2n) {
+			#contact > .inner > .split > :first-child:before {
+				display: none;
+			}
+
+			/*#contact > .inner > :nth-child(2n) {
 				padding-left: 3em;
 				width: 40%;
-			}
+			}*/
 
 			#contact > .inner > .split {
 				padding: 0;
+				display: flex;
 			}
 
 				#contact > .inner > .split > * {
 					padding: 3em 0 1em 3em ;
 					position: relative;
+					flex: 1;
 				}
 
 					#contact > .inner > .split > *:before {
@@ -3664,13 +3670,14 @@ input, select, textarea {
 						position: absolute;
 						top: 0;
 						width: calc(100vw + 3em);
+						width: calc(100% + 3em);
 					}
 
 				#contact > .inner > .split > :first-child:before {
 					display: none;
 				}
 
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 1880px) {
 
 			#contact > .inner {
 				display: block;
@@ -3682,10 +3689,10 @@ input, select, textarea {
 					width: 100%;
 				}
 
-				#contact > .inner > :nth-child(2n) {
+				/*#contact > .inner > :nth-child(2n) {
 					padding-left: 0;
 					width: 100%;
-				}
+				}*/
 
 				#contact > .inner > .split > * {
 					padding: 3em 0 1em 0 ;
