@@ -3628,13 +3628,27 @@ input, select, textarea {
 		overflow-x: hidden;
 	}
 
-		#contact > .inner {
-			display: -moz-flex;
-			display: -webkit-flex;
-			display: -ms-flex;
-			display: flex;
-			padding: 0 !important;
+	#contact > .inner {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	#contact .contact-method {
+		padding: 3em;
+		width: 100%;
+		box-sizing: border-box;
+		border-bottom: solid 1px rgba(212, 212, 255, 0.1);
+	}
+	
+	#contact .contact-method:last-child {
+		border-bottom: none;
+	}
+	
+	@media screen and (min-width: 736px) {
+		#contact .contact-method {
+			width: 50%;
 		}
+	}
 
 			#contact > .inner > :nth-child(2n - 1) {
 				padding: 4em 3em 2em 0 ;
