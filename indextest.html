@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Home Page</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<!-- Minimal, mobile-first tweaks (kept super simple) -->
+		<style>
+			/* Make the intro text and photo stack nicely on phones */
+			.content-with-photo {
+				display: flex;
+				flex-direction: column;
+				gap: 1rem;
+				align-items: center;
+			}
+			.content-with-photo .content { max-width: 60ch; }
+			.content-with-photo .photo img {
+				max-width: 240px;
+				border-radius: 12px;
+				width: 100%;
+				height: auto;
+			}
+
+			/* On wider screens, place text and photo side by side */
+			@media (min-width: 820px) {
+				.content-with-photo {
+					flex-direction: row;
+					align-items: flex-start;
+					gap: 2rem;
+				}
+				.content-with-photo .photo img { max-width: 320px; }
+			}
+
+			/* Big, comfortable tap areas for buttons/links */
+			a.button, .button-link {
+				display: inline-block;
+				padding: .9rem 1.1rem;
+				border-radius: 999px;
+				border: 1px solid rgba(255,255,255,.2);
+				text-decoration: none;
+				line-height: 1;
+				white-space: nowrap;
+			}
+
+			/* Simple floating Next button (bottom-right) */
+			.next-fab {
+				position: fixed;
+				right: 16px;
+				bottom: 16px;
+				z-index: 1000;
+				background: #6c63ff; /* subtle violet */
+				color: #fff;
+				box-shadow: 0 10px 24px rgba(0,0,0,.25);
+			}
+			.next-fab:focus { outline: 2px solid #22d3ee; outline-offset: 2px; }
+
+			/* Inline Next button style in banner */
+			.next-inline {
+				background: transparent;
+				border-color: rgba(255,255,255,.35);
+				color: inherit;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<a href="educations.html" class="logo"><strong>next page</strong> <span>See My Education Background</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="educations.html">Education</a></li>
+							<li><a href="compAndLangSkills.html">Computer Skills, languages</a></li>
+							<li><a href="softskills.html">Soft Skills</a></li>
+							<li><a href="workExperiences.html">Work Experiences</a></li>
+							<li><a href="Hobby.html">Hobby and Interests</a></li>
+						</ul>
+					</nav>
+
+				<!-- Banner -->
+					<section id="banner" class="major">
+						<div class="inner">
+							<header class="major">
+								<h1>Hello, I am Enny</h1>
+							</header>
+							<div class="content-with-photo">
+								<div class="content">
+									I’m a tech enthusiast fueled by a genuine passion for helping others. I’m always eager to learn something new and put it to use in creative ways. With a positive, 'can-do' mindset, I adapt easily and love collaborating to make a real difference.
+									<br><br>
+									My goal? To contribute as much as I can to help people, make them happy, and empower them to be their best. Let’s explore my journey and see how we can create something wonderful together!
+									<br><br>
+									<a class="button-link next-inline" href="educations.html" aria-label="Go to next page about my education">Next: Education →</a>
+								</div>
+								<div class="photo">
+									<img src="images/enny.jpg" alt="Photo of Enny"/>
+								</div>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+						<section id="contact">
+							<div class="inner">
+								<div class="contact-method">
+									<span class="icon solid alt fa-envelope"></span>
+									<h3>Email</h3>
+									<a href="mailto:jkt.enny@gmail.com">jkt.enny@gmail.com</a>
+								</div>
+								<div class="contact-method">
+									<span class="icon solid alt fa-phone"></span>
+									<h3>Phone</h3>
+									<span>+32 494 80 6699</span>
+								</div>
+								<div class="contact-method">
+									<span class="icon solid alt fa-home"></span>
+									<h3>Address</h3>
+									<span>#7800, Ath<br />Hainaut, Belgium</span>
+								</div>
+							</div>
+						</section>
+
+					<!-- Footer -->
+						<footer id="footer">
+							<div class="inner">
+								<ul class="icons">
+									<li><a href="https://github.com/EnnyFRANS" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.linkedin.com/in/enny-frans-4a9001203/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								</ul>
+							</div>
+						</footer>
+					</div>
+			</div>
+
+			<!-- Extra forward navigation: sticky Next button -->
+			<a class="button-link next-fab" href="educations.html" aria-label="Next page: Education">Next →</a>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+	</body>
+</html>
